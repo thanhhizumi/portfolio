@@ -11,7 +11,7 @@ class Footer extends StatelessWidget {
   final String _getInTouch =
       "You have an idea, I am here to turn your dream into real digital solution.";
   final String _description =
-      "I am developer has around 4 years experience developing mobile and web applications, using different languages and techniques.";
+      "I am junior developer has around 2 years experience developing mobile and web applications, using different languages and techniques.";
 
   @override
   Widget build(BuildContext context) {
@@ -189,7 +189,7 @@ class Footer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Proudly powered by OuahidDev ©${DateTime.now().year}',
+                  'Proudly powered by John ©${DateTime.now().year}',
                   style: TextStyle(
                     color: AppColors.greyLight.withOpacity(.75),
                   ),
@@ -365,7 +365,7 @@ class Footer extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Proudly powered by OuahidDev ©${DateTime.now().year}',
+              'Proudly powered by John ©${DateTime.now().year}',
               style: TextStyle(
                 color: AppColors.greyLight.withOpacity(.75),
               ),
