@@ -31,7 +31,7 @@ class WorkingProcess extends StatelessWidget {
                       '01.',
                       'icons/pencil.png',
                       'Plan',
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
+                      'Getting requirements of the customer, understand what they need, complile those into system requiremetns, inspecific functional / none- functional, the last step is to confirm it and start making a plan'),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -40,7 +40,7 @@ class WorkingProcess extends StatelessWidget {
                       '02.',
                       'icons/design.png',
                       'Design',
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
+                      'After understand project documentation, I will start design, in high level. Which process will be use scrum for instance, manage team and assign who will incharge of specific roles, design how to finish a feature.'),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -48,8 +48,8 @@ class WorkingProcess extends StatelessWidget {
                       context,
                       '03.',
                       'icons/coding.png',
-                      'Code',
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
+                      'Implementation',
+                      'At this stage, I will start coding, and manage source via git perform unit test. after project is about 80%, tester will join and report. And developer will interatively fix bugs until the product is finished'),
                 )
               ],
             ),
