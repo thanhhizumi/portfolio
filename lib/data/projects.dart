@@ -11,6 +11,23 @@ class Project {
 // ignore: non_constant_identifier_names
 List<Project> PROJECTS = [
   Project(
+    name: 'NameBook',
+    description:
+        "A FLutter application like facebook messenger which has audio / video calling, chat messenger and other features,  this app used for japanese company that need an app to communicate between employees",
+    image: 'images/projects/namebook.jpeg',
+    url: '',
+    skills: [
+      'Dart',
+      'Method-Channel',
+      'Platform-View',
+      'Flutter',
+      'Agora engine',
+      'Call Kit',
+      'Push Kit',
+      'Git',
+    ],
+  ),
+  Project(
     name: 'Sellove',
     description:
         "Sellove is the free broadcasting app and streaming tool for creators for you to sell stuffs by using your camera, go live with just a few taps to the largest social live video streaming platforms! Chat with people all over the world as they watch you experience wonderful products and broadcast everyday adventures in real-time",
