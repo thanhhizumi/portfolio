@@ -34,9 +34,9 @@ class _ContactUsState extends State<ContactUs> {
         child: Column(
           children: [
             Text('GET IN TOUCH', style: AppStyles.title),
-            Container(width: 100, height: 2, color: AppColors.yellow),
+            Container(width: 100, height: 2, color: AppColors.blue),
             const SizedBox(height: 3),
-            Container(width: 75, height: 2, color: AppColors.yellow),
+            Container(width: 75, height: 2, color: AppColors.blue),
             const SizedBox(height: 50),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -86,9 +86,9 @@ class _ContactUsState extends State<ContactUs> {
               style: AppStyles.title,
               textAlign: TextAlign.center,
             ),
-            Container(width: 75, height: 2, color: AppColors.yellow),
+            Container(width: 75, height: 2, color: AppColors.blue),
             const SizedBox(height: 3),
-            Container(width: 50, height: 2, color: AppColors.yellow),
+            Container(width: 50, height: 2, color: AppColors.blue),
             const SizedBox(height: 50),
             Column(
               children: [
@@ -176,7 +176,7 @@ class _ContactUsState extends State<ContactUs> {
                   Expanded(
                     child: TextFormField(
                       validator: (text) {
-                        return (text.isValidName())
+                        return (text != null && text.isValidName())
                             ? null
                             : 'Please insert valid name!';
                       },
@@ -190,7 +190,7 @@ class _ContactUsState extends State<ContactUs> {
                   Expanded(
                     child: TextFormField(
                       validator: (text) {
-                        return (text.isValidEmail)
+                        return (text != null && text.isValidName())
                             ? null
                             : 'Please insert valid email!';
                       },
@@ -207,7 +207,7 @@ class _ContactUsState extends State<ContactUs> {
                 minLines: 3,
                 maxLines: 10,
                 validator: (text) {
-                  return (text.isValidName(minLength: 10))
+                  return (text != null && text.isValidName(minLength: 10))
                       ? null
                       : 'Please insert valid message!, at least 10 characters';
                 },
@@ -218,7 +218,7 @@ class _ContactUsState extends State<ContactUs> {
               ),
               const SizedBox(height: 20),
               RaisedButton(
-                color: AppColors.yellow,
+                color: AppColors.blue,
                 textColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
@@ -233,7 +233,7 @@ class _ContactUsState extends State<ContactUs> {
   }
 
   void _sendMail() async {
-    bool isValidForm = _formKey.currentState.validate();
+    bool isValidForm = _formKey.currentState!.validate();
     if (!isValidForm) return;
 
     final mailto = Mailto(

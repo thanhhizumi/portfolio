@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/ui/responsive_widget.dart';
+import 'package:resume/widgets/c_text.dart';
 
 import '../config/styles.dart';
 import '../config/colors.dart';
@@ -18,9 +19,9 @@ class WorkingProcess extends StatelessWidget {
         child: Column(
           children: [
             Text('WORKING PROCESS', style: AppStyles.title),
-            Container(width: 100, height: 2, color: AppColors.yellow),
+            Container(width: 100, height: 2, color: AppColors.blue),
             const SizedBox(height: 3),
-            Container(width: 75, height: 2, color: AppColors.yellow),
+            Container(width: 75, height: 2, color: AppColors.blue),
             const SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,9 +70,9 @@ class WorkingProcess extends StatelessWidget {
               style: AppStyles.title,
               textAlign: TextAlign.center,
             ),
-            Container(width: 75, height: 2, color: AppColors.yellow),
+            Container(width: 75, height: 2, color: AppColors.blue),
             const SizedBox(height: 3),
-            Container(width: 50, height: 2, color: AppColors.yellow),
+            Container(width: 50, height: 2, color: AppColors.blue),
             const SizedBox(height: 50),
             __buildProcess(context, '01.', 'icons/pencil.png', 'Plan',
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor laboris nisi ut aliquip ex ea commodo.'),
@@ -98,12 +99,10 @@ class WorkingProcess extends StatelessWidget {
           children: [
             Align(
               alignment: Alignment.topRight,
-              child: Text(
-                index,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                ),
+              child: CText(
+                text: index,
+                fontSize: 30,
+                fontWeight: FontWeight.w700,
               ),
             ),
             const SizedBox(height: 10),

@@ -1,11 +1,11 @@
 mixin AppConstants {
-  static final String mail = 'thanhhizumi@gmail.com';
+  static final String mail = 'johnnguyen.it.39@gmail.com';
 
-  static final String phone = '(+84) 0966175765';
+  static final String phone = '(+84) 0987267599';
 
-  static final String location = 'Cau Giay, Ha Noi, Viet Nam';
+  static final String location = 'Ha Noi, Da Nang, Ho Chi Minh';
 
-  static final String github = 'https://github.com/thanhhizumi';
+  static final String github = 'https://github.com/johnnguyenit39';
 
   static final String linkedin =
       'https://www.linkedin.com/in/john-nguyen-b4b66817a/';
@@ -16,5 +16,5 @@ mixin AppConstants {
       'https://www.facebook.com/profile.php?id=100016914275892';
 
   static final String cv =
-      'https://drive.google.com/file/d/1UYS6y-mW_xFoHb_y73lYH8k55Smo5HB7/view?usp=sharing';
+      'https://drive.google.com/file/d/1OENVBsS_V4uiUkqSW0HsFq-2-MJDyGKK/view?usp=sharing';
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume/widgets/c_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'responsive_widget.dart';
@@ -8,9 +9,9 @@ import '../config/styles.dart';
 import '../config/colors.dart';
 
 class About extends StatelessWidget {
-  final String _avatar = 'images/ouahid.jpg';
+  final String _avatar = 'images/avatar.jpg';
   final String _description =
-      "I am junior developer has more than 2 years experience developing mobile and web applications, using different languages and techniques.";
+      "I'm always getting ready for new challenges and willing to improve myself. I'm interested to work as Software Engineer or Mobile Developer besides there are some domains that concern me including fin-tech, data, and AI. For now, I'm playing the role of project manager, my responsibility includes discussing, dealing with the clients, and keeping the progress of the project on time.";
 
   @override
   Widget build(BuildContext context) => ResponsiveWidget(
@@ -51,17 +52,20 @@ class About extends StatelessWidget {
                         ),
                         Text(
                           _description,
-                          style: Theme.of(context).textTheme.bodyText2.copyWith(
-                                color: Colors.black.withOpacity(.7),
-                                fontSize: 17,
-                              ),
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyText2
+                              ?.copyWith(
+                                  color: Colors.black.withOpacity(.7),
+                                  fontSize: 17,
+                                  letterSpacing: 1.2),
                         ),
                         const SizedBox(height: 30),
                         Row(
                           children: [
                             RaisedButton(
                               onPressed: () {},
-                              color: AppColors.yellow,
+                              color: AppColors.blue,
                               textColor: Colors.white,
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
@@ -85,9 +89,9 @@ class About extends StatelessWidget {
               ),
               const SizedBox(height: 100),
               Text('MY SKILLS', style: AppStyles.title),
-              Container(width: 100, height: 2, color: AppColors.yellow),
+              Container(width: 100, height: 2, color: AppColors.blue),
               const SizedBox(height: 3),
-              Container(width: 75, height: 2, color: AppColors.yellow),
+              Container(width: 75, height: 2, color: AppColors.blue),
               const SizedBox(height: 50),
               Wrap(
                 spacing: 25,
@@ -122,14 +126,14 @@ class About extends StatelessWidget {
               Text(
                 'ABOUT ME',
                 style: TextStyle(
-                  color: AppColors.yellow,
+                  color: AppColors.blue,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
               ),
               Text(
                 _description,
-                style: Theme.of(context).textTheme.bodyText2.copyWith(
+                style: Theme.of(context).textTheme.bodyText2?.copyWith(
                       color: Colors.black.withOpacity(.7),
                       fontSize: 13,
                     ),
@@ -138,7 +142,7 @@ class About extends StatelessWidget {
               const SizedBox(height: 30),
               RaisedButton(
                 onPressed: () {},
-                color: AppColors.yellow,
+                color: AppColors.blue,
                 textColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
@@ -155,9 +159,9 @@ class About extends StatelessWidget {
               ),
               const SizedBox(height: 50),
               Text('MY SKILLS', style: AppStyles.title),
-              Container(width: 75, height: 2, color: AppColors.yellow),
+              Container(width: 75, height: 2, color: AppColors.blue),
               const SizedBox(height: 3),
-              Container(width: 50, height: 2, color: AppColors.yellow),
+              Container(width: 50, height: 2, color: AppColors.blue),
               const SizedBox(height: 25),
               Wrap(
                 spacing: 10,
@@ -172,8 +176,11 @@ class About extends StatelessWidget {
       );
 
   void _downloadCV() {
-    launch(AppConstants.cv);
+    launchUrl(Uri.parse(AppConstants.cv));
   }
 
-  Widget _buildSkill(Skill skill) => Chip(label: Text(skill.name));
+  Widget _buildSkill(Skill skill) => Chip(
+          label: CText(
+        text: skill.name,
+      ));
 }

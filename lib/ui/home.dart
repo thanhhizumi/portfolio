@@ -16,7 +16,7 @@ import '../config/colors.dart';
 import '../config/constants.dart';
 
 class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
                 flexibleSpace: Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/cover.jpg'),
+                      image: AssetImage('images/cover.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -91,8 +91,11 @@ class _HomeState extends State<Home> {
                     child: Container(
                       width: 40,
                       height: 40,
-                      color: AppColors.yellow,
-                      child: Image.asset('images/ouahid.jpg'),
+                      color: AppColors.blue,
+                      child: Image.asset(
+                        'images/avatar.jpg',
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),
@@ -139,7 +142,7 @@ class _HomeState extends State<Home> {
                       const SizedBox(width: 20),
                       RaisedButton(
                         onPressed: _scrollToContactUs,
-                        color: AppColors.yellow,
+                        color: AppColors.blue,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 40,
                           vertical: 15,
@@ -171,13 +174,13 @@ class _HomeState extends State<Home> {
                   height: 100,
                   margin: const EdgeInsets.symmetric(vertical: 20),
                   decoration: BoxDecoration(
-                    color: AppColors.yellow,
+                    color: AppColors.blue,
                     borderRadius: BorderRadius.circular(1000),
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(1000),
                     child: Image.asset(
-                      'images/ouahid.jpg',
+                      'images/avatar.jpg',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -216,7 +219,7 @@ class _HomeState extends State<Home> {
                 ListTile(
                   title: RaisedButton(
                     onPressed: _scrollToContactUs,
-                    color: AppColors.yellow,
+                    color: AppColors.blue,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 40,
                       vertical: 15,
@@ -233,7 +236,7 @@ class _HomeState extends State<Home> {
                   children: [
                     InkWell(
                       onTap: () async {
-                        launch(AppConstants.github);
+                        launchUrl(Uri.parse(AppConstants.github));
                       },
                       child: AppIcon(
                         'icons/github.png',
@@ -243,7 +246,7 @@ class _HomeState extends State<Home> {
                     const SizedBox(width: 20),
                     InkWell(
                       onTap: () {
-                        launch(AppConstants.linkedin);
+                        launchUrl(Uri.parse(AppConstants.linkedin));
                       },
                       child: AppIcon(
                         'icons/linkedin.png',
@@ -253,7 +256,7 @@ class _HomeState extends State<Home> {
                     const SizedBox(width: 20),
                     InkWell(
                       onTap: () {
-                        launch(AppConstants.twitter);
+                        launchUrl(Uri.parse(AppConstants.twitter));
                       },
                       child: AppIcon(
                         'icons/twitter.png',
@@ -263,7 +266,7 @@ class _HomeState extends State<Home> {
                     const SizedBox(width: 20),
                     InkWell(
                       onTap: () {
-                        launch(AppConstants.facebook);
+                        launchUrl(Uri.parse(AppConstants.facebook));
                       },
                       child: AppIcon(
                         'icons/facebook.png',
@@ -303,8 +306,8 @@ class _HomeState extends State<Home> {
                         child: Container(
                           width: 40,
                           height: 40,
-                          color: AppColors.yellow,
-                          child: Image.asset('images/ouahid.jpg'),
+                          color: AppColors.blue,
+                          child: Image.asset('images/avatar.jpg'),
                         ),
                       ),
                     ),
@@ -313,7 +316,7 @@ class _HomeState extends State<Home> {
                 flexibleSpace: Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('images/cover.jpg'),
+                      image: AssetImage('images/cover.png'),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -374,8 +377,8 @@ class _HomeState extends State<Home> {
   Widget _buildFab() {
     return StreamBuilder<bool>(
       stream: _fabStream.stream,
-      builder: (_, data) {
-        final bool showFab = data.hasData && data.data;
+      builder: (_, snapshot) {
+        final bool showFab = snapshot.hasData == true;
         return AnimatedOpacity(
           opacity: showFab ? 1 : 0,
           duration: const Duration(milliseconds: 500),
@@ -393,42 +396,42 @@ class _HomeState extends State<Home> {
 
   void _scrollToHeader() {
     Scrollable.ensureVisible(
-      _headerGlobalKey.currentContext,
+      _headerGlobalKey.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }
 
   void _scrollToAbout() {
     Scrollable.ensureVisible(
-      _aboutGlobaleKey.currentContext,
+      _aboutGlobaleKey.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }
 
   void _scrollToStatistics() {
     Scrollable.ensureVisible(
-      _statisticsGlobaleKey.currentContext,
+      _statisticsGlobaleKey.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }
 
   void _scrollToWorkingProcess() {
     Scrollable.ensureVisible(
-      _workingProcessGlobaleKye.currentContext,
+      _workingProcessGlobaleKye.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }
 
   void _scrollToRecentProjects() {
     Scrollable.ensureVisible(
-      _recentProjectsGlobaleKey.currentContext,
+      _recentProjectsGlobaleKey.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }
 
   void _scrollToContactUs() {
     Scrollable.ensureVisible(
-      _contactUsGlobaleKey.currentContext,
+      _contactUsGlobaleKey.currentContext!,
       duration: const Duration(seconds: 1),
     );
   }

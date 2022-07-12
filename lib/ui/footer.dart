@@ -11,7 +11,7 @@ class Footer extends StatelessWidget {
   final String _getInTouch =
       "You have an idea, I am here to turn your dream into real digital solution.";
   final String _description =
-      "I am junior developer has around 2 years experience developing mobile and web applications, using different languages and techniques.";
+      "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I show you how to do the digital conversion in the best way. On the order hand, I will involve coding if you already shaped your idea and how everything goes well.";
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class Footer extends StatelessWidget {
                           Container(
                             width: 2,
                             height: 20,
-                            color: AppColors.yellow,
+                            color: AppColors.blue,
                           ),
                           const SizedBox(width: 7.5),
                           Text(
@@ -119,7 +119,7 @@ class Footer extends StatelessWidget {
                           Container(
                             width: 2,
                             height: 20,
-                            color: AppColors.yellow,
+                            color: AppColors.blue,
                           ),
                           const SizedBox(width: 7.5),
                           Text(
@@ -153,7 +153,7 @@ class Footer extends StatelessWidget {
                           Container(
                             width: 2,
                             height: 20,
-                            color: AppColors.yellow,
+                            color: AppColors.blue,
                           ),
                           const SizedBox(width: 7.5),
                           Text(
@@ -181,7 +181,7 @@ class Footer extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Divider(
-              color: AppColors.greyLight.withOpacity(.75),
+              color: AppColors.greyLight?.withOpacity(.75),
               thickness: .5,
             ),
             const SizedBox(height: 20),
@@ -191,7 +191,7 @@ class Footer extends StatelessWidget {
                 Text(
                   'Proudly powered by John ©${DateTime.now().year}',
                   style: TextStyle(
-                    color: AppColors.greyLight.withOpacity(.75),
+                    color: AppColors.greyLight?.withOpacity(.75),
                   ),
                 ),
                 Row(children: _socialMedia()),
@@ -216,7 +216,7 @@ class Footer extends StatelessWidget {
                     Container(
                       width: 2,
                       height: 20,
-                      color: AppColors.yellow,
+                      color: AppColors.blue,
                     ),
                     const SizedBox(width: 7.5),
                     Text(
@@ -296,7 +296,7 @@ class Footer extends StatelessWidget {
                     Container(
                       width: 2,
                       height: 20,
-                      color: AppColors.yellow,
+                      color: AppColors.blue,
                     ),
                     const SizedBox(width: 7.5),
                     Text(
@@ -328,7 +328,7 @@ class Footer extends StatelessWidget {
                     Container(
                       width: 2,
                       height: 20,
-                      color: AppColors.yellow,
+                      color: AppColors.blue,
                     ),
                     const SizedBox(width: 7.5),
                     Text(
@@ -353,7 +353,7 @@ class Footer extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Divider(
-              color: AppColors.greyLight.withOpacity(.75),
+              color: AppColors.greyLight?.withOpacity(.75),
               thickness: .5,
             ),
             const SizedBox(height: 20),
@@ -367,7 +367,7 @@ class Footer extends StatelessWidget {
             Text(
               'Proudly powered by John ©${DateTime.now().year}',
               style: TextStyle(
-                color: AppColors.greyLight.withOpacity(.75),
+                color: AppColors.greyLight?.withOpacity(.75),
               ),
               textAlign: TextAlign.center,
             ),
@@ -379,7 +379,7 @@ class Footer extends StatelessWidget {
 
   Widget _buildProject(BuildContext context, Project project) => InkWell(
         onTap: () {
-          launch(project.url);
+          launchUrl(Uri.parse(project.url.toString()));
         },
         child: ResponsiveWidget(
           desktopScreen: Container(
@@ -387,14 +387,14 @@ class Footer extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             width: MediaQuery.of(context).size.width * .1,
             height: MediaQuery.of(context).size.width * .1,
-            child: Image.asset(project.image),
+            child: Image.asset(project.image.toString()),
           ),
           mobileScreen: Container(
             color: AppColors.greyLight,
             padding: const EdgeInsets.all(15),
             width: MediaQuery.of(context).size.width * .2,
             height: MediaQuery.of(context).size.width * .2,
-            child: Image.asset(project.image),
+            child: Image.asset(project.image.toString()),
           ),
         ),
       );
@@ -402,7 +402,7 @@ class Footer extends StatelessWidget {
   List<Widget> _socialMedia() => [
         InkWell(
           onTap: () async {
-            launch(AppConstants.github);
+            launchUrl(Uri.parse(AppConstants.github));
           },
           child: AppIcon('icons/github.png'),
         ),

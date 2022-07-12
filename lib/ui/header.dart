@@ -9,7 +9,7 @@ class Header extends StatelessWidget {
   final String _name = "John";
   final String _job = "Mobile Developer";
   final String _description =
-      "I am junior developer has more than 2 years experience developing mobile and web applications, using different languages and techniques.";
+      "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I show you how to do the digital conversion in the best way. On the order hand, I will involve coding if you already shaped your idea and how everything goes well.";
 
   @override
   Widget build(BuildContext context) => ResponsiveWidget(
@@ -32,7 +32,7 @@ class Header extends StatelessWidget {
               Text(
                 _job,
                 style: TextStyle(
-                  color: AppColors.yellow,
+                  color: AppColors.blue,
                   fontSize: 40,
                   fontWeight: FontWeight.w900,
                 ),
@@ -42,7 +42,7 @@ class Header extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 2,
                 child: Text(
                   _description,
-                  style: Theme.of(context).textTheme.bodyText2.copyWith(
+                  style: Theme.of(context).textTheme.bodyText2?.copyWith(
                         color: Colors.grey[100],
                         fontSize: 17,
                       ),
@@ -50,7 +50,7 @@ class Header extends StatelessWidget {
               ),
               const SizedBox(height: 30),
               RaisedButton(
-                color: AppColors.yellow,
+                color: AppColors.blue,
                 textColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
@@ -80,7 +80,7 @@ class Header extends StatelessWidget {
                 Text(
                   _job,
                   style: TextStyle(
-                    color: AppColors.yellow,
+                    color: AppColors.blue,
                     fontSize: 30,
                     fontWeight: FontWeight.w900,
                   ),
@@ -90,7 +90,7 @@ class Header extends StatelessWidget {
                   width: MediaQuery.of(context).size.width,
                   child: Text(
                     _description,
-                    style: Theme.of(context).textTheme.bodyText2.copyWith(
+                    style: Theme.of(context).textTheme.bodyText2?.copyWith(
                           color: Colors.grey[100],
                           fontSize: 15,
                           height: 1.8,
@@ -100,7 +100,7 @@ class Header extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 RaisedButton(
-                  color: AppColors.yellow,
+                  color: AppColors.blue,
                   textColor: Colors.white,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
