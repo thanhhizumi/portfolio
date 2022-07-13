@@ -7,11 +7,9 @@ import '../config/constants.dart';
 import '../config/colors.dart';
 import 'icon.dart';
 
-class Footer extends StatelessWidget {
+class Footer extends StatelessWidget with AppConstants {
   final String _getInTouch =
       "You have an idea, I am here to turn your dream into real digital solution.";
-  final String _description =
-      "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I show you how to do the digital conversion in the best way. On the order hand, I will involve coding if you already shaped your idea and how everything goes well.";
 
   @override
   Widget build(BuildContext context) {
@@ -133,7 +131,7 @@ class Footer extends StatelessWidget {
                       ),
                       const SizedBox(height: 20),
                       Text(
-                        _description,
+                        AppConstants.introduction,
                         style: TextStyle(
                           color: AppColors.greyLight,
                           fontSize: 13,
@@ -310,7 +308,7 @@ class Footer extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  _description,
+                  AppConstants.introduction,
                   style: TextStyle(
                     color: AppColors.greyLight,
                     fontSize: 13,

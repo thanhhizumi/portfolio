@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/widgets/c_button.dart';
+import 'package:resume/widgets/c_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'responsive_widget.dart';
@@ -79,7 +80,10 @@ class MyProjects extends StatelessWidget {
                         SizedBox(
                           height: MediaQuery.of(context).size.width * .01,
                         ),
-                        Text(project.description.toString()),
+                        CText(
+                          text: project.description.toString(),
+                        ),
+
                         SizedBox(
                           height: MediaQuery.of(context).size.width * .025,
                         ),
@@ -97,10 +101,14 @@ class MyProjects extends StatelessWidget {
                           height: MediaQuery.of(context).size.width * .025,
                         ),
                         CButton(
+                          width: 100,
                           titleColor: Colors.white,
                           backgroundColor: AppColors.blue,
                           radius: 10,
                           title: 'Visit',
+                          buttonTapped: () {
+                            launchUrl(Uri.parse(project.url.toString()));
+                          },
                         ),
                         // OutlineButton(
                         //   onPressed: () {

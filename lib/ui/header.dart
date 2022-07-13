@@ -8,8 +8,6 @@ import '../config/colors.dart';
 class Header extends StatelessWidget {
   final String _name = "John";
   final String _job = "Mobile Developer";
-  final String _description =
-      "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I'll show you how to do the digital conversion in the best way. On the other hand, I will involve coding if you already shaped your idea and how yours business going to develop.";
 
   @override
   Widget build(BuildContext context) => ResponsiveWidget(
@@ -41,7 +39,7 @@ class Header extends StatelessWidget {
               SizedBox(
                 width: MediaQuery.of(context).size.width / 2,
                 child: Text(
-                  _description,
+                  AppConstants.introduction,
                   style: Theme.of(context).textTheme.bodyText2?.copyWith(
                         color: Colors.grey[100],
                         fontSize: 17,
@@ -89,7 +87,7 @@ class Header extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    _description,
+                    AppConstants.introduction,
                     style: Theme.of(context).textTheme.bodyText2?.copyWith(
                           color: Colors.grey[100],
                           fontSize: 15,
