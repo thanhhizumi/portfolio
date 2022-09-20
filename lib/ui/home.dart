@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:resume/ui/responsive_widget.dart';
+import 'package:resume/widgets/c_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'about.dart';
@@ -140,18 +141,17 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                       const SizedBox(width: 20),
-                      RaisedButton(
-                        onPressed: _scrollToContactUs,
-                        color: AppColors.blue,
+                      CButton(
+                        radius: 10,
+                        buttonTapped: _scrollToContactUs,
+                        backgroundColor: AppColors.blue,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 40,
                           vertical: 15,
                         ),
-                        child: Text(
-                          'Contact Me',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
-                        ),
+                        title: 'Contact Me',
+                        titleColor: Colors.white,
+                        titleFontWeight: FontWeight.bold,
                       ),
                     ],
                   ),
@@ -217,17 +217,17 @@ class _HomeState extends State<Home> {
                 Divider(),
                 const SizedBox(height: 20),
                 ListTile(
-                  title: RaisedButton(
-                    onPressed: _scrollToContactUs,
-                    color: AppColors.blue,
+                  title: CButton(
+                    radius: 10,
+                    buttonTapped: _scrollToContactUs,
+                    backgroundColor: AppColors.blue,
                     padding: const EdgeInsets.symmetric(
                       horizontal: 40,
                       vertical: 15,
                     ),
-                    child: Text(
-                      'Contact Me',
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
+                    title: 'Contact Me',
+                    titleColor: Colors.white,
+                    titleFontWeight: FontWeight.bold,
                   ),
                 ),
                 const SizedBox(height: 20),

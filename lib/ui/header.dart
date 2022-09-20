@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/ui/responsive_widget.dart';
+import 'package:resume/widgets/c_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/constants.dart';
@@ -47,14 +48,14 @@ class Header extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              RaisedButton(
-                color: AppColors.blue,
-                textColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                onPressed: _downloadCV,
-                child: Text('Download CV'),
-              ),
+              CButton(
+                  radius: 10,
+                  backgroundColor: AppColors.blue,
+                  titleColor: Colors.white,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  buttonTapped: _downloadCV,
+                  title: 'Download CV'),
               const SizedBox(height: 100),
             ],
           ),
@@ -97,14 +98,14 @@ class Header extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 30),
-                RaisedButton(
-                  color: AppColors.blue,
-                  textColor: Colors.white,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                  onPressed: _downloadCV,
-                  child: Text('Download CV'),
-                ),
+                CButton(
+                    radius: 10,
+                    backgroundColor: AppColors.blue,
+                    titleColor: Colors.white,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 20),
+                    buttonTapped: _downloadCV,
+                    title: 'Download CV'),
                 const SizedBox(height: 100),
               ],
             ),

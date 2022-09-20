@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:resume/ui/icon.dart';
 import 'package:mailto/mailto.dart';
+import 'package:resume/widgets/c_button.dart';
 
 import 'responsive_widget.dart';
 import '../config/constants.dart';
@@ -217,14 +218,14 @@ class _ContactUsState extends State<ContactUs> {
                 ),
               ),
               const SizedBox(height: 20),
-              RaisedButton(
-                color: AppColors.blue,
-                textColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                onPressed: _sendMail,
-                child: Text('Send'),
-              ),
+              CButton(
+                  radius: 10,
+                  backgroundColor: AppColors.blue,
+                  titleColor: Colors.white,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  buttonTapped: _sendMail,
+                  title: 'Send'),
             ],
           ),
         )

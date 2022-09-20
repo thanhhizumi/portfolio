@@ -16,7 +16,7 @@ mixin AppConstants {
       'https://www.facebook.com/profile.php?id=100016914275892';
 
   static final String cv =
-      'https://drive.google.com/file/d/1OENVBsS_V4uiUkqSW0HsFq-2-MJDyGKK/view?usp=sharing';
+      'https://drive.google.com/file/d/12X5Vi6qGdeHKQHhIXLkfVxZpF-Dtqv6f/view?usp=sharing';
 
   static final String introduction =
       "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I'll show you how to do the digital conversion in the best way. On the other hand, I will involve coding if you already shaped your idea and how yours business going to develop.";

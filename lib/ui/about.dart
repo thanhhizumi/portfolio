@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:resume/widgets/c_button.dart';
 import 'package:resume/widgets/c_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -63,22 +64,24 @@ class About extends StatelessWidget {
                         const SizedBox(height: 30),
                         Row(
                           children: [
-                            RaisedButton(
-                              onPressed: () {},
-                              color: AppColors.blue,
-                              textColor: Colors.white,
+                            CButton(
+                              radius: 10,
+                              buttonTapped: () {},
+                              backgroundColor: AppColors.blue,
+                              titleColor: Colors.white,
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
-                              child: Text('HIRE ME NOW'),
+                              title: 'HIRE ME NOW',
                             ),
                             const SizedBox(width: 20),
-                            RaisedButton(
-                              onPressed: _downloadCV,
-                              color: AppColors.black,
-                              textColor: Colors.white,
+                            CButton(
+                              radius: 10,
+                              buttonTapped: _downloadCV,
+                              backgroundColor: AppColors.blue,
+                              titleColor: Colors.white,
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 30, vertical: 20),
-                              child: Text('VIEW RESUME'),
+                              title: 'VIEW RESUME',
                             ),
                           ],
                         ),
@@ -140,22 +143,24 @@ class About extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 30),
-              RaisedButton(
-                onPressed: () {},
-                color: AppColors.blue,
-                textColor: Colors.white,
+              CButton(
+                radius: 10,
+                buttonTapped: () {},
+                backgroundColor: AppColors.blue,
+                titleColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                child: Text('HIRE ME NOW'),
+                title: 'HIRE ME NOW',
               ),
-              const SizedBox(height: 20),
-              RaisedButton(
-                onPressed: _downloadCV,
-                color: AppColors.black,
-                textColor: Colors.white,
+              const SizedBox(width: 20),
+              CButton(
+                radius: 10,
+                buttonTapped: _downloadCV,
+                backgroundColor: AppColors.blue,
+                titleColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                child: Text('VIEW RESUME'),
+                title: 'VIEW RESUME',
               ),
               const SizedBox(height: 50),
               Text('MY SKILLS', style: AppStyles.title),
