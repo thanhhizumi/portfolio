@@ -8,7 +8,7 @@ import '../config/colors.dart';
 
 class Header extends StatelessWidget {
   final String _name = "John";
-  final String _job = "Mobile Developer";
+  final String _job = "Full Stack Developer";
 
   @override
   Widget build(BuildContext context) => ResponsiveWidget(
@@ -21,7 +21,7 @@ class Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'I’m $_name',
+                "I'm $_name",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
@@ -44,6 +44,7 @@ class Header extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyText2?.copyWith(
                         color: Colors.grey[100],
                         fontSize: 17,
+                        height: 1.5,
                       ),
                 ),
               ),
@@ -53,9 +54,9 @@ class Header extends StatelessWidget {
                   backgroundColor: AppColors.blue,
                   titleColor: Colors.white,
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                      const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                   buttonTapped: _downloadCV,
-                  title: 'Download CV'),
+                  title: 'View Resume'),
               const SizedBox(height: 100),
             ],
           ),
@@ -102,10 +103,10 @@ class Header extends StatelessWidget {
                     radius: 10,
                     backgroundColor: AppColors.blue,
                     titleColor: Colors.white,
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 30, vertical: 20),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                     buttonTapped: _downloadCV,
-                    title: 'Download CV'),
+                    title: 'View Resume'),
                 const SizedBox(height: 100),
               ],
             ),

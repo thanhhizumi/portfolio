@@ -135,6 +135,7 @@ class Footer extends StatelessWidget with AppConstants {
                         style: TextStyle(
                           color: AppColors.greyLight,
                           fontSize: 13,
+                          height: 1.5,
                         ),
                       ),
                     ],
@@ -310,6 +311,7 @@ class Footer extends StatelessWidget with AppConstants {
                 Text(
                   AppConstants.introduction,
                   style: TextStyle(
+                    height: 1.5,
                     color: AppColors.greyLight,
                     fontSize: 13,
                   ),

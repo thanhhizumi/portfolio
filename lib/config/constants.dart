@@ -16,8 +16,8 @@ mixin AppConstants {
       'https://www.facebook.com/profile.php?id=100016914275892';
 
   static final String cv =
-      'https://drive.google.com/file/d/11ClG6cgxA2h9Ancy2bAEH_dyprU_uwQN/view?usp=share_link';
+      'https://drive.google.com/file/d/1mPxoQWGvm3xr8mTY3P64z18jLiP4SkqZ/view?usp=share_link';
 
   static final String introduction =
-      "My name is John, and I’m a Software Developer. My job is to provide solutions and digital implementation for businesses with expert advice on IT and system design. I read a lot and sytem professionals so you don’t have to. I'll show you how to do the digital conversion in the best way. On the other hand, I will involve coding if you already shaped your idea and how yours business going to develop.";
+      "As a Full Stack developer, specializing in Flutter and Golang, I have extensive experience across various domains such as fin-tech, e-commerce, medical, logistics, education, social media, and AI. My main responsibilities include coding, system design, project architecture, and collaborating with other teams to ensure timely project delivery. In addition, I have also worked in presales for some projects where my tasks involve discussing with clients, providing consultation and advice, and liaising with the development team to make necessary process modifications.";
 }

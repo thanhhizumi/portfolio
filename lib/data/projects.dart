@@ -21,6 +21,21 @@ List<Project> PROJECTS = [
       'Flutter',
       'Responsive',
       'Bloc',
+      'UnitTest',
+    ],
+  ),
+  Project(
+    name: 'Chocolate',
+    description:
+        "The Chocolate application is a financial application that enables its users to make deposits into the system and receive monthly interest rates that surpass those offered by central or commercial banks.",
+    image: 'images/projects/chocofin.png',
+    url: 'https://www.pimspoints.com/',
+    skills: [
+      'Flutter',
+      'AWS',
+      'Icognito',
+      'UnitTest',
+      'Bloc',
     ],
   ),
   Project(

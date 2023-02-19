@@ -32,7 +32,7 @@ class WorkingProcess extends StatelessWidget {
                       '01.',
                       'icons/pencil.png',
                       'Plan',
-                      'Getting requirements of the customer, understand what they need, complile those into system requiremetns, inspecific functional / none- functional, the last step is to confirm it and start making a plan'),
+                      "The initial stage of developing a system involves acquiring and comprehending the customer's requirements, followed by consolidating them into system requirements, including specific functional and non-functional requirements. The final step in this process entails verifying the completeness and accuracy of the compiled requirements and initiating the project planning phase."),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -41,7 +41,7 @@ class WorkingProcess extends StatelessWidget {
                       '02.',
                       'icons/design.png',
                       'Design',
-                      'After understand project documentation, I will start design, in high level. Which process will be use scrum for instance, manage team and assign who will incharge of specific roles, design how to finish a feature.'),
+                      "Upon obtaining a thorough understanding of the project documentation, the design phase will commence, beginning with high-level planning. The process will employ Scrum methodology to facilitate efficient team management and task assignment for specific roles. The primary objective of this phase will be to develop a comprehensive plan to guide the completion of the project features."),
                 ),
                 const SizedBox(width: 10),
                 Expanded(
@@ -50,7 +50,7 @@ class WorkingProcess extends StatelessWidget {
                       '03.',
                       'icons/coding.png',
                       'Implementation',
-                      'At this stage, I will start coding, and manage source via git perform unit test. after project is about 80%, tester will join and report. And developer will interatively fix bugs until the product is finished'),
+                      "At this stage of the project, coding will commence, with source management performed via Git, and unit testing conducted throughout. Upon reaching 80% completion, testers will be brought on board to report on any issues or errors. Developers will then work iteratively to identify and resolve any reported bugs until the product reaches a finished state."),
                 )
               ],
             ),
@@ -122,6 +122,7 @@ class WorkingProcess extends StatelessWidget {
             Text(
               description,
               style: TextStyle(
+                height: 1.5,
                 color: Colors.black45,
               ),
               textAlign: TextAlign.center,

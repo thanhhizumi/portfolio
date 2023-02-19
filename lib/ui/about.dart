@@ -12,7 +12,7 @@ import '../config/colors.dart';
 class About extends StatelessWidget {
   final String _avatar = 'images/avatar.jpg';
   final String _description =
-      "I'm always getting ready for new challenges and willing to improve myself. I'm interested to work as Software Engineer or Mobile Developer besides there are some domains that concern me including fin-tech, data, and AI. For now, I'm playing the role of project manager, my responsibility includes discussing, dealing with the clients, and keeping the progress of the project on time.";
+      "With a passion for programming and a strong foundation in these two popular languages are Flutter and Go, One of my most notable strengths is my communication skills. I have a natural ability to explain technical concepts to both technical and non-technical stakeholders in a way that is easy to understand. Their clear and concise communication style is invaluable to any development team, and ensures that everyone is on the same page throughout the project.I’m also highly independent and takes a proactive approach to their work. I have the ability to take ownership of a project and drive it forward, delivering high-quality work on time and within budget. My exceptional attention to detail and focus on results ensures that they consistently meet and exceed project expectations.";
 
   @override
   Widget build(BuildContext context) => ResponsiveWidget(
@@ -51,40 +51,28 @@ class About extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
-                          _description,
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyText2
-                              ?.copyWith(
-                                  color: Colors.black.withOpacity(.7),
-                                  fontSize: 17,
-                                  letterSpacing: 1.2),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Text(
+                            _description,
+                            style:
+                                Theme.of(context).textTheme.bodyText2?.copyWith(
+                                      color: Colors.black.withOpacity(.7),
+                                      fontSize: 17,
+                                      letterSpacing: 1.2,
+                                      height: 1.5,
+                                    ),
+                          ),
                         ),
-                        const SizedBox(height: 30),
-                        Row(
-                          children: [
-                            CButton(
-                              radius: 10,
-                              buttonTapped: () {},
-                              backgroundColor: AppColors.blue,
-                              titleColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              title: 'HIRE ME NOW',
-                            ),
-                            const SizedBox(width: 20),
-                            CButton(
-                              radius: 10,
-                              buttonTapped: _downloadCV,
-                              backgroundColor: AppColors.blue,
-                              titleColor: Colors.white,
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 30, vertical: 20),
-                              title: 'VIEW RESUME',
-                            ),
-                          ],
-                        ),
+                        CButton(
+                          radius: 10,
+                          buttonTapped: _downloadCV,
+                          backgroundColor: AppColors.blue,
+                          titleColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 0, vertical: 20),
+                          title: 'VIEW RESUME',
+                        )
                       ],
                     ),
                   ),
@@ -143,16 +131,6 @@ class About extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 30),
-              CButton(
-                radius: 10,
-                buttonTapped: () {},
-                backgroundColor: AppColors.blue,
-                titleColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                title: 'HIRE ME NOW',
-              ),
-              const SizedBox(width: 20),
               CButton(
                 radius: 10,
                 buttonTapped: _downloadCV,
