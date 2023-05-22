@@ -30,8 +30,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/fonts/
-    - assets/icons/
-    - assets/images/
-    - assets/packages/
-    - assets/shaders/
+    - fonts/
+    - icons/
+    - images/
+    - packages/
+    - shaders/
