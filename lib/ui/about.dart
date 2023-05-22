@@ -10,7 +10,7 @@ import '../config/styles.dart';
 import '../config/colors.dart';
 
 class About extends StatelessWidget {
-  final String _avatar = 'images/avatar.jpg';
+  final String _avatar = 'images/avatar.png';
   final String _description =
       "With a passion for programming and a strong foundation in these two popular languages are Flutter and Go, One of my most notable strengths is my communication skills. I have a natural ability to explain technical concepts to both technical and non-technical stakeholders in a way that is easy to understand. Their clear and concise communication style is invaluable to any development team, and ensures that everyone is on the same page throughout the project.I’m also highly independent and takes a proactive approach to their work. I have the ability to take ownership of a project and drive it forward, delivering high-quality work on time and within budget. My exceptional attention to detail and focus on results ensures that they consistently meet and exceed project expectations.";
 
