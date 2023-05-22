@@ -1,19 +1,16 @@
-# pimspoints
+# portfolio
 
-* Generate localized keys
-Command: flutter pub run easy_localization:generate -S "assets/localization" -f keys -o locale_keys.g.dart
+A new Flutter project.
 
-* Generate JsonSeriable
-Command: flutter pub run build_runner build --delete-conflicting-outputs
+## Getting Started
 
-Hive Adapter: 
-flutter packages pub run build_runner build
+This project is a starting point for a Flutter application.
 
-#Web
-flutter build web --web-renderer canvaskit
+A few resources to get you started if this is your first Flutter project:
 
-//Build android app:
-flutter build appbundle --release
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-//Upgrade version
-flutter pub upgrade --major-versions
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

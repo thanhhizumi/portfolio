@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume/ui/responsive_widget.dart';
-import 'package:resume/widgets/c_button.dart';
+import 'package:portfolio/ui/responsive_widget.dart';
+import 'package:portfolio/widgets/c_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../config/constants.dart';
@@ -56,7 +56,7 @@ class Header extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                   buttonTapped: _downloadCV,
-                  title: 'View Resume'),
+                  title: 'View portfolio'),
               const SizedBox(height: 100),
             ],
           ),
@@ -106,7 +106,7 @@ class Header extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                     buttonTapped: _downloadCV,
-                    title: 'View Resume'),
+                    title: 'View portfolio'),
                 const SizedBox(height: 100),
               ],
             ),

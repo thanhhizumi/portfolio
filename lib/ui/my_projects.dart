@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume/widgets/c_button.dart';
-import 'package:resume/widgets/c_text.dart';
+import 'package:portfolio/widgets/c_button.dart';
+import 'package:portfolio/widgets/c_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'responsive_widget.dart';

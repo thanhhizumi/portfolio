@@ -1,5 +1,5 @@
 mixin AppConstants {
-  static final String avatar = 'images/avatar.png';
+  static final String avatar = 'assets/images/avatar.png';
   static final String mail = 'johnnguyen.it.39@gmail.com';
 
   static final String phone = '(+84) 0987267599';

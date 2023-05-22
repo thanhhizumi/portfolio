@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:resume/ui/responsive_widget.dart';
-import 'package:resume/widgets/c_button.dart';
+import 'package:portfolio/ui/responsive_widget.dart';
+import 'package:portfolio/widgets/c_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'about.dart';

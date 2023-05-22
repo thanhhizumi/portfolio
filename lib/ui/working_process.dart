@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume/ui/responsive_widget.dart';
-import 'package:resume/widgets/c_text.dart';
+import 'package:portfolio/ui/responsive_widget.dart';
+import 'package:portfolio/widgets/c_text.dart';
 
 import '../config/styles.dart';
 import '../config/colors.dart';

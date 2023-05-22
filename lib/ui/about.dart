@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume/widgets/c_button.dart';
-import 'package:resume/widgets/c_text.dart';
+import 'package:portfolio/widgets/c_button.dart';
+import 'package:portfolio/widgets/c_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'responsive_widget.dart';
@@ -70,7 +70,7 @@ class About extends StatelessWidget {
                           titleColor: Colors.white,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 0, vertical: 20),
-                          title: 'VIEW RESUME',
+                          title: 'VIEW portfolio',
                         )
                       ],
                     ),
@@ -137,7 +137,7 @@ class About extends StatelessWidget {
                 titleColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                title: 'VIEW RESUME',
+                title: 'VIEW portfolio',
               ),
               const SizedBox(height: 50),
               Text('MY SKILLS', style: AppStyles.title),

@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:resume/ui/icon.dart';
+import 'package:portfolio/ui/icon.dart';
 import 'package:mailto/mailto.dart';
-import 'package:resume/widgets/c_button.dart';
+import 'package:portfolio/widgets/c_button.dart';
 
 import 'responsive_widget.dart';
 import '../config/constants.dart';
