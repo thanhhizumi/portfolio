@@ -56,7 +56,7 @@ class Header extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                   buttonTapped: _downloadCV,
-                  title: 'View portfolio'),
+                  title: 'Resume'),
               const SizedBox(height: 100),
             ],
           ),
@@ -106,7 +106,7 @@ class Header extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 0, vertical: 20),
                     buttonTapped: _downloadCV,
-                    title: 'View portfolio'),
+                    title: 'Resume'),
                 const SizedBox(height: 100),
               ],
             ),
