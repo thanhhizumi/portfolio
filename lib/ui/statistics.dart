@@ -16,11 +16,14 @@ class Statistics extends StatelessWidget {
         ),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          _buildStatistic(context, 'assets/icons/briefcase.png', '5+',
+              'Years of Experience'),
           _buildStatistic(
-              context, 'icons/briefcase.png', '5+', 'Years of Experience'),
-          _buildStatistic(context, 'icons/menu.png', '10+', 'Projects Done'),
-          _buildStatistic(context, 'icons/happy.png', '30+', 'Happy Clients'),
-          _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+              context, 'assets/icons/menu.png', '10+', 'Projects Done'),
+          _buildStatistic(
+              context, 'assets/icons/happy.png', '30+', 'Happy Clients'),
+          _buildStatistic(
+              context, 'assets/icons/coffee.png', '∞', 'Coffee Cups'),
         ]),
       ),
       mobileScreen: Container(

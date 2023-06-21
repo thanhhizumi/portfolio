@@ -239,7 +239,7 @@ class _HomeState extends State<Home> {
                         launchUrl(Uri.parse(AppConstants.github));
                       },
                       child: AppIcon(
-                        'icons/github.png',
+                        'assets/icons/github.png',
                         color: AppColors.black,
                       ),
                     ),
@@ -249,7 +249,7 @@ class _HomeState extends State<Home> {
                         launchUrl(Uri.parse(AppConstants.linkedin));
                       },
                       child: AppIcon(
-                        'icons/linkedin.png',
+                        'assets/icons/linkedin.png',
                         color: AppColors.black,
                       ),
                     ),
@@ -259,7 +259,7 @@ class _HomeState extends State<Home> {
                         launchUrl(Uri.parse(AppConstants.twitter));
                       },
                       child: AppIcon(
-                        'icons/twitter.png',
+                        'assets/icons/twitter.png',
                         color: AppColors.black,
                       ),
                     ),
@@ -269,7 +269,7 @@ class _HomeState extends State<Home> {
                         launchUrl(Uri.parse(AppConstants.facebook));
                       },
                       child: AppIcon(
-                        'icons/facebook.png',
+                        'assets/icons/facebook.png',
                         color: AppColors.black,
                       ),
                     ),
@@ -389,7 +389,7 @@ class _HomeState extends State<Home> {
                 ? _scrollToHeader
                 : null, // make sure user cannot click when button hidden
             mini: true,
-            child: AppIcon('icons/double-up-arrow.png', size: 20),
+            child: AppIcon('assets/icons/double-up-arrow.png', size: 20),
           ),
         );
       },

@@ -404,28 +404,28 @@ class Footer extends StatelessWidget with AppConstants {
           onTap: () async {
             launchUrl(Uri.parse(AppConstants.github));
           },
-          child: AppIcon('icons/github.png'),
+          child: AppIcon('assets/icons/github.png'),
         ),
         const SizedBox(width: 20),
         InkWell(
           onTap: () {
             launch(AppConstants.linkedin);
           },
-          child: AppIcon('icons/linkedin.png'),
+          child: AppIcon('assets/icons/linkedin.png'),
         ),
         const SizedBox(width: 20),
         InkWell(
           onTap: () {
             launch(AppConstants.twitter);
           },
-          child: AppIcon('icons/twitter.png'),
+          child: AppIcon('assets/icons/twitter.png'),
         ),
         const SizedBox(width: 20),
         InkWell(
           onTap: () {
             launch(AppConstants.facebook);
           },
-          child: AppIcon('icons/facebook.png'),
+          child: AppIcon('assets/icons/facebook.png'),
         ),
       ];
 }

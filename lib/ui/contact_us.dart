@@ -47,19 +47,19 @@ class _ContactUsState extends State<ContactUs> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _buildContactInfo(
-                        'icons/email.png',
+                        'assets/icons/email.png',
                         'Mail Us:',
                         AppConstants.mail,
                       ),
                       const SizedBox(height: 20),
                       _buildContactInfo(
-                        'icons/call.png',
+                        'assets/icons/call.png',
                         'Call Us:',
                         AppConstants.phone,
                       ),
                       const SizedBox(height: 20),
                       _buildContactInfo(
-                        'icons/pin.png',
+                        'assets/icons/pin.png',
                         'Visit Us:',
                         AppConstants.location,
                       ),
@@ -97,19 +97,19 @@ class _ContactUsState extends State<ContactUs> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _buildContactInfo(
-                      'icons/email.png',
+                      'assets/icons/email.png',
                       'Mail Us:',
                       AppConstants.mail,
                     ),
                     const SizedBox(height: 20),
                     _buildContactInfo(
-                      'icons/call.png',
+                      'assets/icons/call.png',
                       'Call Us:',
                       AppConstants.phone,
                     ),
                     const SizedBox(height: 20),
                     _buildContactInfo(
-                      'icons/pin.png',
+                      'assets/icons/pin.png',
                       'Visit Us:',
                       AppConstants.location,
                     ),

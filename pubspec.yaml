@@ -31,7 +31,7 @@ flutter:
 
   assets:
     - fonts/
-    - icons/
+    - assets/icons/
     - images/
     - packages/
     - shaders/

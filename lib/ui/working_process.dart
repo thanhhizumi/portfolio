@@ -30,7 +30,7 @@ class WorkingProcess extends StatelessWidget {
                   child: __buildProcess(
                       context,
                       '01.',
-                      'icons/pencil.png',
+                      'assets/icons/pencil.png',
                       'Plan',
                       "The initial stage of developing a system involves acquiring and comprehending the customer's requirements, followed by consolidating them into system requirements, including specific functional and non-functional requirements. The final step in this process entails verifying the completeness and accuracy of the compiled requirements and initiating the project planning phase."),
                 ),
@@ -39,7 +39,7 @@ class WorkingProcess extends StatelessWidget {
                   child: __buildProcess(
                       context,
                       '02.',
-                      'icons/design.png',
+                      'assets/icons/design.png',
                       'Design',
                       "Upon obtaining a thorough understanding of the project documentation, the design phase will commence, beginning with high-level planning. The process will employ Scrum methodology to facilitate efficient team management and task assignment for specific roles. The primary objective of this phase will be to develop a comprehensive plan to guide the completion of the project features."),
                 ),
@@ -48,7 +48,7 @@ class WorkingProcess extends StatelessWidget {
                   child: __buildProcess(
                       context,
                       '03.',
-                      'icons/coding.png',
+                      'assets/icons/coding.png',
                       'Implementation',
                       "At this stage of the project, coding will commence, with source management performed via Git, and unit testing conducted throughout. Upon reaching 80% completion, testers will be brought on board to report on any issues or errors. Developers will then work iteratively to identify and resolve any reported bugs until the product reaches a finished state."),
                 )
