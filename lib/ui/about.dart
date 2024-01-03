@@ -70,7 +70,7 @@ class About extends StatelessWidget {
                           titleColor: Colors.white,
                           padding: const EdgeInsets.symmetric(
                               horizontal: 0, vertical: 20),
-                          title: 'VIEW portfolio',
+                          title: 'View portfolio',
                         )
                       ],
                     ),
@@ -137,7 +137,7 @@ class About extends StatelessWidget {
                 titleColor: Colors.white,
                 padding:
                     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                title: 'VIEW portfolio',
+                title: 'View portfolio',
               ),
               const SizedBox(height: 50),
               Text('MY SKILLS', style: AppStyles.title),
