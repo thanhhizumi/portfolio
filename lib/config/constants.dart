@@ -17,8 +17,8 @@ mixin AppConstants {
       'https://www.facebook.com/profile.php?id=100016914275892';
 
   static final String cv =
-      'https://drive.google.com/file/d/1Eh1PbaueLYixAkAQni1MnJNXCY4XTta9/view?usp=sharing';
+      'https://drive.google.com/file/d/1AFVxzXEquucUpNJZts4UaFqkEImMf24c/view?usp=sharing';
 
   static final String introduction =
-      "As a Full Stack developer, specializing in Mobile Development (Flutter + React Navite) and Backend Development (Golang, NodeJs) I have extensive experience across various domains such as fin-tech, e-commerce, medical, logistics, education, social media, and AI. My main responsibilities include coding, system design, project architecture, and collaborating with other teams to ensure timely project delivery. In addition, I have also worked in presales for some projects where my tasks involve discussing with clients, providing consultation and advice, and liaising with the development team to make necessary process modifications.";
+      "As a Full Stack developer, specializing in Mobile Development (Flutter) and Backend Development (Golang) I have extensive experience across various domains such as fin-tech, e-commerce, medical, logistics, education, social media, and AI. My main responsibilities include coding, system design, project architecture, and collaborating with other teams to ensure timely project delivery. In addition, I have also worked in presales for some projects where my tasks involve discussing with clients, providing consultation and advice, and liaising with the development team to make necessary process modifications.";
 }
